@@ -16,6 +16,8 @@ public class MessageController {
     @Autowired
     private MessageService messageService;
 
+    
+
     @PostMapping("/message/send")
     public Message sendMessage(@RequestBody MessageRequest messageRequest) {
         return messageService.sendMessage(messageRequest);
